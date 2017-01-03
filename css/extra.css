@@ -52,7 +52,7 @@ p, ul.stars {
     text-align: left;
     width: 60%;
 }
-.stars li > span {
+.stars li > span, p > span.b {
     color: #518e2e;
 }
 .stars.exp li {
