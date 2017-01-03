@@ -3,12 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title># identity - Creative vCard / Personal portfolio</title>
+<title># PHP Painkiller Sergei Philippov/ Full-ctack developer</title>
 
 <!-- CSS files begin-->
 <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all"/>
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" media="all" />
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/extra.css" media="all"/>
 
 <!-- JavaScript files begin-->
 <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
@@ -36,14 +37,14 @@
                 </div>
                 <div class="top-block">
                     <a href="index.html" class="logo">
-                        # identity
+                        # PHP PainKiller
                     </a>
                     <div class="bg-e-button">
                     </div>
                     <div class="bg-button">
                     </div>
                     <a href="" class="open">
-                        <img src="images/flash.png" alt="" />
+                        <img src="img/flash.png" alt="" />
                     </a>
                 </div>
             </div>
@@ -58,15 +59,15 @@
                             </div>
                         </div>
                         <ul class="data left">
-                            <li class="search"># wait... identity...</li>
+                            <li class="search"># wait... identify... </li>
                             <li class="search-d">
-                                # / > webdeveloper
+                                # / > Sergei Philippov
                             </li>
                             <li class="search-d">
-                                # / > john doe
+                                # / > web-developer
                             </li>
                             <li class="search-d">
-                                # / > access received...
+                                # / > access granted...
                             </li>
                         </ul>
                     </div>
@@ -87,54 +88,33 @@
                                 <ul class="socicon left">
                                     <li>
                                         <a href="#">
-                                            <img src="images/facebook.png" alt="" />
+                                            <img src="img/facebook.png" alt="" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="images/twitter.png" alt="" />
+                                            <img src="img/twitter.png" alt="" />
                                         </a>
                                     </li>
                                     <li class="last">
                                         <a href="#">
-                                            <img src="images/dribbble.png" alt="" />
+                                            <img src="img/dribbble.png" alt="" />
                                         </a>
                                     </li>
                                 </ul>
-                                <img src="images/johndoe.png" alt="" class="right" />
+                                <img class="ava" src="img/me.png" alt="" />
                                 <ul class="left who">
                                     <li>
-                                        # John Doe
+                                        # Sergei Philippov
                                     </li>
                                     <li>
-                                        # Webdeveloper
+                                        # Full-stack developer
                                     </li>
                                 </ul>
                             </div>
                             <!-- foto / social block end here -->
                             <!-- menu begin here -->
-                            <ul id="menu" class="right">
-                                <li>
-                                    <a href="#about" class="selected">
-                                        about
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#resume" class="skill-start">
-                                        resume
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio">
-                                        portfolio
-                                    </a>
-                                </li>
-                                <li class="last">
-                                    <a href="#contact">
-                                        contact
-                                    </a>
-                                </li>
-                            </ul>
+                            <? require('inc/menu.php'); ?>
                         </div>
                         <!-- menu end here -->
                         <!-- page block begin here -->
@@ -142,208 +122,14 @@
                             <!-- page about begin here -->
                             <div id="about" class="box left">
                                 <div class="box-content">
-                                    <h3>
-                                        # About Me
-                                    </h3>
-                                    <p class="sub">
-                                        Lorem ipsum dolor sit amet
-                                    </p>
-                                    <p>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                        veritatis et quasi architecto beatae vitae
-                                        <a href="#">
-                                            dicta sunt
-                                        </a>
-                                        explicabo.
-                                    </p>
-                                    <p>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                    </p>
-                                    <h3>
-                                        # Experience
-                                    </h3>
-                                    <p class="sub">
-                                        Lorem ipsum dolor sit amet
-                                    </p>
-                                    <p>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                    </p>
-                                    <ul class="experience">
-                                        <li>
-                                            <span>
-                                                <a href="#">
-                                                    New Creative Corp.
-                                                </a>
-                                            </span>
-                                            / Senior Developer 2010 - Present
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <a href="#">
-                                                    Crazy Games Corp.
-                                                </a>
-                                            </span>
-                                            / Front-End Developer 2007 - 2010
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <a href="#">
-                                                    Cool Studio Inc.
-                                                </a>
-                                            </span>
-                                            / Back-End Developer 2005 - 2007
-                                        </li>
-                                    </ul>
-                                    <h3>
-                                        # New projects
-                                    </h3>
-                                    <p class="sub">
-                                        Lorem ipsum dolor sit amet
-                                    </p>
-                                    <!-- gallery begin here -->
-                                    <div class="gallery-block">
-                                        <div class="gallery left">
-                                            <div class="img">
-                                                <img src="images/image-ex.jpg" alt="" />
-                                            </div>
-                                            <div class="des">
-                                                description
-                                            </div>
-                                            <div class="block-zoom">
-                                                <a href="images/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
-                                                </a>
-                                                <a href="#" title="Link" class="link">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="gallery left last">
-                                            <div class="img">
-                                                <img src="images/image-ex.jpg" alt="" />
-                                            </div>
-                                            <div class="des">
-                                                description
-                                            </div>
-                                            <div class="block-zoom">
-                                                <a href="images/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
-                                                </a>
-                                                <a href="#" title="Link" class="link">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- gallery end here -->
+                                    <? require('inc/about.php'); ?>
                                 </div>
                             </div>
                             <!-- page about end here -->
                             <!-- page resume begin here -->
                             <div id="resume" class="box left">
                                 <div class="box-content">
-                                    <h3>
-                                        # Skills
-                                    </h3>
-                                    <p class="sub">
-                                        Lorem ipsum dolor sit amet
-                                    </p>
-                                    <p>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                    </p>
-                                    <div class="skills">
-                                        <div class="bar">
-                                            <div class="block-pr">
-                                                <div class="progressbar pr1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="last">
-                                            HTML &amp; CSS
-                                        </div>
-                                        <div class="bar">
-                                            <div class="block-pr">
-                                                <div class="progressbar pr2">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="last">
-                                            jQuery
-                                        </div>
-                                        <div class="bar">
-                                            <div class="block-pr">
-                                                <div class="progressbar pr3">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="last">
-                                            JavaScript
-                                        </div>
-                                        <div class="bar bar-b">
-                                            <div class="block-pr">
-                                                <div class="progressbar pr4">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="last">
-                                            PHP &amp; MySql
-                                        </div>
-                                    </div>
-                                    <ul class="stars">
-                                        <li>
-                                            Lorem ipsum
-                                            <a href="#">
-                                                dolor sit amet
-                                            </a>
-                                            , consectetuer adipiscing elit.
-                                        </li>
-                                        <li>
-                                            Lorem ipsum dolor sit amet,
-                                            <a href="#">
-                                                consectetuer
-                                            </a>
-                                            adipiscing elit.
-                                        </li>
-                                        <li>
-                                            Lorem
-                                            <a href="#">
-                                                ipsum dolor
-                                            </a>
-                                            sit amet, consectetuer adipiscing elit.
-                                        </li>
-                                    </ul>
-                                    <h3>
-                                        # Education
-                                    </h3>
-                                    <p class="sub">
-                                        Lorem ipsum dolor sit amet
-                                    </p>
-                                    <ul class="education">
-                                        <li>
-                                            <span>
-                                                Harvard University
-                                            </span>
-                                            / Web Front-End Development
-                                        </li>
-                                        <li>
-                                            <span>
-                                                University of Chicago
-                                            </span>
-                                            / Web Front-End Development
-                                        </li>
-                                    </ul>
-                                    <p>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                    </p>
+                                    <? require('inc/skills.php');?>
                                 </div>
                             </div>
                             <!-- page resume end here -->
@@ -360,13 +146,13 @@
                                     <div class="gallery-block">
                                         <div class="gallery left">
                                             <div class="img">
-                                                <img src="images/image-ex.jpg" alt="" />
+                                                <img src="img/image-ex.jpg" alt="" />
                                             </div>
                                             <div class="des">
                                                 description
                                             </div>
                                             <div class="block-zoom">
-                                                <a href="images/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
+                                                <a href="img/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
                                                 </a>
                                                 <a href="#" title="Link" class="link">
                                                 </a>
@@ -374,13 +160,13 @@
                                         </div>
                                         <div class="gallery left last">
                                             <div class="img">
-                                                <img src="images/image-ex.jpg" alt="" />
+                                                <img src="img/image-ex.jpg" alt="" />
                                             </div>
                                             <div class="des">
                                                 description
                                             </div>
                                             <div class="block-zoom">
-                                                <a href="images/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
+                                                <a href="img/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
                                                 </a>
                                                 <a href="#" title="Link" class="link">
                                                 </a>
@@ -388,13 +174,13 @@
                                         </div>
                                         <div class="gallery left">
                                             <div class="img">
-                                                <img src="images/image-ex.jpg" alt="" />
+                                                <img src="img/image-ex.jpg" alt="" />
                                             </div>
                                             <div class="des">
                                                 description
                                             </div>
                                             <div class="block-zoom">
-                                                <a href="images/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
+                                                <a href="img/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
                                                 </a>
                                                 <a href="#" title="Link" class="link">
                                                 </a>
@@ -402,13 +188,13 @@
                                         </div>
                                         <div class="gallery left last">
                                             <div class="img">
-                                                <img src="images/image-ex.jpg" alt="" />
+                                                <img src="img/image-ex.jpg" alt="" />
                                             </div>
                                             <div class="des">
                                                 description
                                             </div>
                                             <div class="block-zoom">
-                                                <a href="images/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
+                                                <a href="img/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
                                                 </a>
                                                 <a href="#" title="Link" class="link">
                                                 </a>
@@ -416,13 +202,13 @@
                                         </div>
                                         <div class="gallery left">
                                             <div class="img">
-                                                <img src="images/image-ex.jpg" alt="" />
+                                                <img src="img/image-ex.jpg" alt="" />
                                             </div>
                                             <div class="des">
                                                 description
                                             </div>
                                             <div class="block-zoom">
-                                                <a href="images/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
+                                                <a href="img/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
                                                 </a>
                                                 <a href="#" title="Link" class="link">
                                                 </a>
@@ -430,13 +216,13 @@
                                         </div>
                                         <div class="gallery left last">
                                             <div class="img">
-                                                <img src="images/image-ex.jpg" alt="" />
+                                                <img src="img/image-ex.jpg" alt="" />
                                             </div>
                                             <div class="des">
                                                 description
                                             </div>
                                             <div class="block-zoom">
-                                                <a href="images/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
+                                                <a href="img/big-image-ex.jpg" rel="prettyPhoto" title="Images" class="zoom">
                                                 </a>
                                                 <a href="#" title="Link" class="link">
                                                 </a>

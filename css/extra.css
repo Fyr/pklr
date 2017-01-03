@@ -1,0 +1,66 @@
+#menu li a { font-family: 'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif; }
+.data li { font:24px 'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif; }
+
+.box-content p{ margin:0 0 12px 0;}
+.box-content p{ margin:0 0 12px 0;}
+.box-content h3 { font-size:22px; color:#79c113;text-shadow:1px 1px 0px #000000; font-weight:400;margin:24px 0 0 0; font-family:'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif;
+    padding:0; display:block;}
+.box-content h3:first-child { margin-top: 0px; }
+.box-content p.sub{ font-size:11px;margin:0 0 12px 0;border-bottom:1px #2b3e20 solid; padding:0 0 4px 0; color:#518e2e;}
+.box-content-c p{ margin:0 0 12px 0;}
+.box-content-c h3 { font-size:22px; color:#79c113;text-shadow:1px 1px 0px #000000; font-weight:400; margin:0; font-family:'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif;padding:0; }
+
+.stars{ margin: 0 0 16px 0;}
+.stars li { font-size: 14px; margin:0; padding: 1px 0 0 24px; }
+
+ul.experience li span{font-size: 15px; font-family:'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif;}
+
+ul.who li{ padding:0 0 6px 0; font:18px 'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif; }
+
+div.skills div.last{font-family:'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif;}
+.progressbar .text {font-family:'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif;}
+ul.education li span{font-family:'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif;}
+#contactus button{font-family: 'UbuntuMonoRegular',Trebuchet MS,Arial,Helvetica,sans-serif;}
+
+p, ul.stars {
+    text-align: justify;
+}
+.table {
+    border: 0px solid #000;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.table > thead > tr > th {
+    border-bottom: 1px solid #2b3e20;
+    color: #518e2e;
+    font-size: 11px;
+    padding: 3px 5px;
+}
+.table > thead > tr > th > span {
+    color: #79c113;
+    font-size: 14px;
+    font-weight: bold;
+}
+.table > tbody > tr > td {
+    padding: 3px 5px;
+}
+.table.skills { width: 100%; }
+.table.skills th, .table.skills td {
+    text-align: center;
+}
+.table.skills th:first-child, .table.skills td:first-child {
+    text-align: left;
+    width: 60%;
+}
+.stars li > span {
+    color: #518e2e;
+}
+.stars.exp li {
+    margin-bottom: 16px;
+}
+.ava {
+    float: right;
+    border: 1px solid #2b3e20;
+    padding: 5px;
+    width: 126px;
+}

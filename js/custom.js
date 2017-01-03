@@ -15,9 +15,8 @@ Cufon.replace('.bottom-block h1,.bottom-block h5', {
 });
 
 $(document).ready(function() {
-
+/*
     // Start page						   
-
     $(".energy").delay(500).animate({
         width: "100%"
     },
@@ -140,8 +139,35 @@ $(document).ready(function() {
 
         return false;
     });
-
     // Page open / close
+
+*/
+    $('.container').css('margin-top', '-335px');
+    $('.main').show();
+    $('.scanner').hide();
+    $('.load').hide();
+    $('.center-block').show();
+    // $('.page').show();
+    $('.shut-left').remove();
+    $('.shut-right').remove();
+    $('.top-block div, .top-block a.open').hide();
+    // $('#about .box-content').show();
+    $(".page").fadeIn(500,
+        function() {
+
+            $(".box-content,.box-content-c").delay(300).slideDown(1000,
+                function() {
+
+                    $('.box-content,.box-content-c').jScrollPane(
+
+                        {
+                            verticalDragMinHeight: 103,
+                            verticalDragMaxHeight: 103
+                        });
+
+                });
+
+        });
 
     var pagecont = $('div.cont div[id]');
     pagecont.hide().filter(':first').slideDown(1000);
@@ -172,28 +198,28 @@ $(document).ready(function() {
                 Current: 100,
                 // Change Your percent skill
                 Easing: 'easeOutExpo',
-                aBackgroundImg: 'images/progress.png'
+                aBackgroundImg: 'img/progress.png'
             });
 
             $(".pr2").progression({
                 Current: 75,
                 // Change Your percent skill
                 Easing: 'easeOutExpo',
-                aBackgroundImg: 'images/progress.png'
+                aBackgroundImg: 'img/progress.png'
             });
 
             $(".pr3").progression({
                 Current: 70,
                 // Change Your percent skill
                 Easing: 'easeOutExpo',
-                aBackgroundImg: 'images/progress.png'
+                aBackgroundImg: 'img/progress.png'
             });
 
             $(".pr4").progression({
                 Current: 65,
                 // Change Your percent skill
                 Easing: 'easeOutExpo',
-                aBackgroundImg: 'images/progress.png'
+                aBackgroundImg: 'img/progress.png'
             });
 
         },
