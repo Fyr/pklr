@@ -13,7 +13,7 @@
     </li>
     <li>
         <a href="#portfolio">
-            portfolio
+            портфолио
         </a>
     </li>
     <li class="last">

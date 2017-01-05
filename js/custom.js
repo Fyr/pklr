@@ -15,7 +15,7 @@ Cufon.replace('.bottom-block h1,.bottom-block h5', {
 });
 
 $(document).ready(function() {
-/*
+
     // Start page						   
     $(".energy").delay(500).animate({
         width: "100%"
@@ -141,7 +141,7 @@ $(document).ready(function() {
     });
     // Page open / close
 
-*/
+/*
     $('.container').css('margin-top', '-335px');
     $('.main').show();
     $('.scanner').hide();
@@ -168,6 +168,11 @@ $(document).ready(function() {
                 });
 
         });
+    $(".bottom-block h5").delay(700).animate({
+            opacity: 1
+        },
+        150);
+*/
 
     var pagecont = $('div.cont div[id]');
     pagecont.hide().filter(':first').slideDown(1000);

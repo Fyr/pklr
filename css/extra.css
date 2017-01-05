@@ -64,3 +64,10 @@ p, ul.stars {
     padding: 5px;
     width: 126px;
 }
+
+.box-content a, .box-content a:visited {
+    color: #79c113;
+}
+.box-content a:hover, .box-content a:active {
+    color: #518e2e;
+}
