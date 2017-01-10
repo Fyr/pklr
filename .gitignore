@@ -8,4 +8,3 @@ app/[Cc]onfig/database.php
 /lib
 files
 .idea
-.idea/*
