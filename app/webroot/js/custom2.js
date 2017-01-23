@@ -153,20 +153,15 @@ $(document).ready(function() {
     $('.shut-right').remove();
     $('.top-block div, .top-block a.open').hide();
     // $('#about .box-content').show();
-    $(".page").fadeIn(500,
-        function() {
-
-            $(".box-content,.box-content-c").delay(300).slideDown(1000,
-                function() {
-					
-				
-					$('.box-content,.box-content-c').mCustomScrollbar({
-						theme:"rounded-dots",
-						scrollInertia:400
-					});
-                });
-
+    $("ul.contacts").fadeIn(500);
+    $(".page").fadeIn(500, function() {
+        $(".box-content,.box-content-c").delay(300).slideDown(1000, function() {
+            $('.box-content,.box-content-c').mCustomScrollbar({
+                theme:"rounded-dots",
+                scrollInertia:400
+            });
         });
+    });
 
     var pagecont = $('div.cont div[id]');
     pagecont.hide().filter(':first').slideDown(1000);

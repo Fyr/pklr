@@ -8,7 +8,7 @@ class ArticleVarsHelper extends AppHelper {
 		$objectType = $this->getObjectType($article);
 		$id = $article[$objectType]['id'];
 		
-		$url = SiteRouter::url($article);
+		$url = Router::url($article);
 		
 		$title = $article[$objectType]['title'];
 		$teaser = nl2br($article[$objectType]['teaser']);

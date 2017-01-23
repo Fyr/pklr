@@ -6,8 +6,8 @@ Router::connectNamed(
     array('default' => false, 'greedy' => false)
 );
 */
-Router::connect('/', array('controller' => 'Pages', 'action' => 'home'));
-Router::connect('/pages/view/:slug.html', 
+Router::connect('/', array('controller' => 'pages', 'action' => 'home'));
+Router::connect('/pages/view/:slug.html',
 	array(
 		'controller' => 'pages', 
 		'action' => 'view',

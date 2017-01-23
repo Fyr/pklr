@@ -5,9 +5,10 @@ App::uses('Page', 'Model');
 App::uses('WorkExp', 'Model');
 App::uses('SkillsCategory', 'Model');
 App::uses('Skill', 'Model');
+App::uses('Portfolio', 'Model');
 class PagesController extends AppController {
 	public $name = 'Pages';
-	public $uses = array('Page', 'WorkExp', 'Skill', 'SkillsCategory');
+	public $uses = array('Page', 'WorkExp', 'Skill', 'SkillsCategory', 'Portfolio');
 	public $helpers = array('ArticleVars', 'Media.PHMedia', 'Core.PHTime');
 
 	public function home() {
@@ -25,6 +26,9 @@ class PagesController extends AppController {
 	}
 
 	public function portfolio() {
+		$aRows = $this->Portfolio->find('all');
+		fdebug($aRows);
+		$this->set('aPortfolio', $aRows);
 	}
 	
 	public function view($slug) {

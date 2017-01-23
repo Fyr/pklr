@@ -63,7 +63,7 @@
 				<ul class="contacts">
 					<li><a href="#"><span class="icon skype"></span> <span>Sergei Phillipov</span></a></li>
 					<li><a href="#"><span class="icon email"></span> <span>fyr@tut.by</span></a></li>
-					<li><a href="#"><span class="icon phone"></span> <span>+375291340967</span></a></li>
+					<!--li><a href="#"><span class="icon phone"></span> <span>+37529123456</span></a></li-->
 				</ul>
 				<p class="subText">Избавляю от головной боли на веб-проектах</p>
 			</div>
@@ -225,7 +225,7 @@
 					Personal vCard
 				</h1>
 				<h5 class="right">
-					Copyright 2011, All Rights Reserved by John Doe
+					Personal site of Sergei Philippov (aka PHP PainKiller)
 				</h5>
 			</div>
 		</div>

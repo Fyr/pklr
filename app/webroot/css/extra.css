@@ -71,3 +71,9 @@ p, ul.stars {
 .box-content a:hover, .box-content a:active {
     color: #518e2e;
 }
+
+#menu li:last-child { margin-bottom:0;}
+.info img.right { padding: 5px; border: 1px solid #518e2e; width: 126px;}
+.gallery-block .gallery:nth-child(even) { margin-right: 0; }
+.box-content .mCSB_container h3:last-child { margin-top: 0;}
+ul.contacts {display: none;}

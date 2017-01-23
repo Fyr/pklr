@@ -111,26 +111,16 @@ $(document).ready(function() {
                     });
 
                     setTimeout(function() {
-
-                        $(".page").fadeIn(500,
-                        function() {
-
-                            $(".box-content,.box-content-c").delay(300).slideDown(1000,
-                            function() {
-
-                                $('.box-content,.box-content-c').jScrollPane(
-
-                                {
-                                    verticalDragMinHeight: 103,
-                                    verticalDragMaxHeight: 103
+                        $("ul.contacts").fadeIn(500);
+                        $(".page").fadeIn(500, function() {
+                            $(".box-content,.box-content-c").delay(300).slideDown(1000, function() {
+                                $('.box-content,.box-content-c').mCustomScrollbar({
+                                    theme:"rounded-dots",
+                                    scrollInertia:400
                                 });
-
                             });
-
                         });
-                    },
-                    1500);
-
+                    }, 1500);
                 },
                 2500);
 
