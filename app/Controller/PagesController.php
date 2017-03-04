@@ -27,7 +27,6 @@ class PagesController extends AppController {
 
 	public function portfolio() {
 		$aRows = $this->Portfolio->find('all');
-		fdebug($aRows);
 		$this->set('aPortfolio', $aRows);
 	}
 	

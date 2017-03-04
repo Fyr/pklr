@@ -1,5 +1,6 @@
 <?=$this->element('title', array('title' => 'Портфолио', 'subtitle' => 'Примеры моих проектов'))?>
-<div class="gallery-block">
+Раздел в разработке...
+<!-- div class="gallery-block">
 <?
     foreach($aPortfolio as $article) {
         $this->ArticleVars->init($article, $url, $title, $teaser, $src, 'thumb216x105');
@@ -21,4 +22,4 @@
 <?
     }
 ?>
-</div>
+</div-->

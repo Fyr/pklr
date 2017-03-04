@@ -1,4 +1,7 @@
+<?=$this->element('title', array('title' => 'Блог', 'subtitle' => 'Здесь будут расположены статьи...'))?>
+Раздел в разработке...
 <?
+	/*
 	$title = $this->ObjectType->getTitle('index', $objectType);
 	echo $this->element('bread_crumbs', array('aBreadCrumbs' => array(
 		__('Home') => '/',
@@ -35,4 +38,5 @@
 </div>
 <?
 	echo $this->element('paginate');
+	*/
 ?>
