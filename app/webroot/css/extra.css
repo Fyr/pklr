@@ -73,7 +73,8 @@ p, ul.stars {
 }
 
 #menu li:last-child { margin-bottom:0;}
-.info img.right { padding: 5px; border: 1px solid #518e2e; width: 126px;}
+.info img.right { padding: 5px; border: 1px solid #518e2e; width: 126px; position: relative; left: -60px; }
 .gallery-block .gallery:nth-child(even) { margin-right: 0; }
-.box-content .mCSB_container h3:last-child { margin-top: 0;}
+.box-content .main-content h3:first-child { margin-top: 0;}
 ul.contacts {display: none;}
+.bottom-block h1, .bottom-block h5 { display: none; opacity: 1; }

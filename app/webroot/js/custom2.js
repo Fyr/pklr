@@ -154,6 +154,7 @@ $(document).ready(function() {
     $('.top-block div, .top-block a.open').hide();
     // $('#about .box-content').show();
     $("ul.contacts").fadeIn(500);
+    $(".bottom-block h1, .bottom-block h5").fadeIn(500);
     $(".page").fadeIn(500, function() {
         $(".box-content,.box-content-c").delay(300).slideDown(1000, function() {
             $('.box-content,.box-content-c').mCustomScrollbar({

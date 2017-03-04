@@ -1,8 +1,8 @@
 <?=$this->element('title', array('title' => 'Резюме (CV)', 'subtitle' => 'Мое резюме для потенциальных работодателей'))?>
 <p>
 <ul class="stars">
-    <li>Скачать <a href="">рус.версию резюме</a></li>
-    <li>Скачать <a href="">англ.версию CV</a></li>
+    <li>Скачать <a href="/sergei-philippov-fullstack-developer-cv-rus.zip">рус.версию резюме</a></li>
+    <li>Скачать <a href="/sergey-philipov-fullstack-developer-cv-en.docx">англ.версию CV</a></li>
 </ul>
 </p>
 

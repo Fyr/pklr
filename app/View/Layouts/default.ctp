@@ -97,6 +97,7 @@
 				<div class="page">
 					<div class="box-left">
 						<div class="info">
+							<!--
 							<ul class="socicon left">
 								<li>
 									<a href="#">
@@ -114,6 +115,7 @@
 									</a>
 								</li>
 							</ul>
+							-->
 							<?=$this->element('who')?>
 						</div>
 						<?=$this->element('menu')?>
@@ -125,7 +127,9 @@
 								<div class="info">
 									<?=$this->element('who')?>
 								</div>
-								<?=$this->fetch('content')?>
+								<div class="main-content">
+									<?=$this->fetch('content')?>
+								</div>
 							</div>
 						</div>
 
@@ -221,12 +225,8 @@
 
 		<div class="bottom">
 			<div class="bottom-block">
-				<h1 class="left">
-					Personal vCard
-				</h1>
-				<h5 class="right">
-					Personal site of Sergei Philippov (aka PHP PainKiller)
-				</h5>
+				<h1 class="left">Blog of professional web-developer</h1>
+				<h5 class="right">Personal site of Sergei Philippov (aka PHP PainKiller)</h5>
 			</div>
 		</div>
 		<!-- bottom block end here -->
@@ -234,5 +234,39 @@
 	<!-- container end here -->
 </div>
 <!-- wrappage end here -->
+<?
+	if (!TEST_ENV) {
+?>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter43226444 = new Ya.Metrika({
+							id:43226444,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true
+						});
+					} catch(e) { }
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/43226444" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+<?
+	}
+?>
 </body>
 </html>

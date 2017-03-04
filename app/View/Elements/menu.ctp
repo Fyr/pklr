@@ -3,7 +3,7 @@
         array('label' => 'обо мне', 'url' => array('controller' => 'pages', 'action' => 'home')),
         array('label' => 'резюме (cv)', 'url' => array('controller' => 'pages', 'action' => 'skills')),
         array('label' => 'портфолио', 'url' => array('controller' => 'pages', 'action' => 'portfolio')),
-        array('label' => 'блог', 'url' => array('controller' => 'pages', 'action' => 'articles'))
+        array('label' => 'блог', 'url' => array('controller' => 'articles', 'action' => 'index'))
     );
 ?>
 <ul id="menu" class="right">
