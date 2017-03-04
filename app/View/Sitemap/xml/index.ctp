@@ -7,23 +7,15 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <?
-	foreach($aNavBar as $item) {
-		$url = Router::url($item['href'], true);
-?>
-<url>
-  <loc><?=$url?></loc>
-  <changefreq>daily</changefreq>
-</url>
-<?
-	}
-	foreach($aCategories as $article) {
-		$url = SiteRouter::url($article);
-?>
-<url>
-  <loc>http://<?=DOMAIN_NAME.$url?></loc>
-  <changefreq>daily</changefreq>
-</url>
-<?
-	}
+    $aUrls = array(
+        array('controller' => 'pages', 'action' => 'home'),
+        array('controller' => 'pages', 'action' => 'skills'),
+        array('controller' => 'pages', 'action' => 'portfolio'),
+        array('controller' => 'articles', 'action' => 'index'),
+    );
+    foreach($aUrls as $url) {
+        $url = $this->Html->url($url);
+        echo $this->element('sitemap_url', compact('url'));
+    }
 ?>
 </urlset>
