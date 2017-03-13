@@ -216,7 +216,7 @@ $(document).ready(function() {
 */
     // Portfolio page
 
-    $("a[rel^='prettyPhoto']").prettyPhoto();
+    // $("a[rel^='prettyPhoto']").prettyPhoto();
     $('.gallery').hover(function() {
         $(this).find('.des').css({
             color: '#79c113'

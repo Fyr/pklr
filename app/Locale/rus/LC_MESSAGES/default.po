@@ -385,29 +385,8 @@ msgstr "Ошибка формата файла (строка %s)"
 msgid "File have been successfully uploaded"
 msgstr "Файл успешно загружен"
 
-msgid "Print selected records"
-msgstr "Распечатать выделенные строки"
-
-msgid "Brands"
-msgstr "Бренды"
-
-msgid "Create Brand"
-msgstr "Создать Бренд"
-
-msgid "Edit Brand"
-msgstr "Редактировать Бренд"
-
-msgid "Brand"
-msgstr "Бренд"
-
 msgid "Count"
 msgstr "Кол-во"
-
-msgid "Exported"
-msgstr "Экспорт данных"
-
-msgid "Data export"
-msgstr "Экспорт данных"
 
 msgid "Slug"
 msgstr "Адрес страницы"
@@ -418,17 +397,8 @@ msgstr "Сортировка"
 msgid "Title rus"
 msgstr "Название (RUS)"
 
-msgid "Motor"
-msgstr "Мотор"
-
-msgid "Detail num"
-msgstr "Номер детали"
-
 msgid "Code"
 msgstr "Код"
-
-msgid "On stock"
-msgstr "На складе"
 
 msgid "Uploadings"
 msgstr "Загрузка"
@@ -499,21 +469,6 @@ msgstr "Редактировать подкатегорию для статьи"
 msgid "Featured product"
 msgstr "Спец.предложение"
 
-msgid "Logotype"
-msgstr "Логотип"
-
-msgid "New logotypes"
-msgstr "Новые логотипы"
-
-msgid "View logotype %s in original size"
-msgstr "Просмотреть логотип %s в оригинальном размере"
-
-msgid "View logotype %s in original size"
-msgstr "Просмотреть логотип %s в оригинальном размере"
-
-msgid "Logo %s in vector"
-msgstr "Логотип %s в векторе"
-
 msgid "more"
 msgstr "подробнее"
 
@@ -523,21 +478,6 @@ msgstr "Обновлено"
 msgid "Views"
 msgstr "Просмотры"
 
-msgid "Images"
-msgstr "Логотипы-картинки"
-
-msgid "Logotypes in vector"
-msgstr "Логотипы в векторе"
-
-msgid "Logotypes by categories"
-msgstr "Каталог логотипов"
-
-msgid "Edit Product category"
-msgstr "Редактировать категорию логотипа"
-
-msgid "Search logo"
-msgstr "Поиск логотипа"
-
 msgid "Hot news"
 msgstr "Новости"
 
@@ -546,9 +486,6 @@ msgstr "Скачать"
 
 msgid "Featured articles"
 msgstr "Полезные статьи"
-
-msgid "Format"
-msgstr "Формат логотипа"
 
 msgid "Image size"
 msgstr "Размеры изображения"
@@ -562,26 +499,8 @@ msgstr "Настройка размеров"
 msgid "Select format"
 msgstr "Выбор формата"
 
-msgid "Download logo %s"
-msgstr "Скачать лого %s"
-
-msgid "Download all as ZIP"
-msgstr "Скачать все ZIP-архивом"
-
-msgid "Terms of use"
-msgstr "Условия пользования"
-
-msgid "terms of use"
-msgstr "условиями пользования"
-
 msgid "Preview"
 msgstr "Предпросмотр"
-
-msgid "Downloaded, times"
-msgstr "Скачано, раз"
-
-msgid "exists"
-msgstr "есть"
 
 msgid "Search results"
 msgstr "Результаты поиска"
@@ -589,11 +508,17 @@ msgstr "Результаты поиска"
 msgid "Page not found"
 msgstr "Страница не найдена"
 
-msgid "Logo in PNG"
-msgstr "Логотип в PNG"
-
-msgid "I agree with %s"
-msgstr "Я согласен с %s"
-
 msgid "Error!"
 msgstr "Ошибка!"
+
+msgid "Tech.stack"
+msgstr "Стек технологий"
+
+msgid "Portfolio"
+msgstr "Портфолио"
+
+msgid "Create Portfolio work"
+msgstr "Создать статью в Портфолио"
+
+msgid "Edit Portfolio work"
+msgstr "Редактировать статью в Портфолио"

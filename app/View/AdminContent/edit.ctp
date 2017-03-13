@@ -1,18 +1,13 @@
 <div class="span8 offset2">
 <?
-    $id = $this->request->data('Article.id');
-    $objectType = $this->request->data('Article.object_type');
+    $id = $this->request->data($objectType.'.id');
     $title = $this->ObjectType->getTitle(($id) ? 'edit' : 'create', $objectType);
     
     $objectID = '';
-    if ($objectType == 'SubcategoryArticle') {
-    	$objectID = $this->request->data('Article.cat_id');
-		$title = Hash::get($categoryArticle, 'CategoryArticle.title').': '.$title;
-	}
 ?>
 	<?=$this->element('admin_title', compact('title'))?>
 <?
-    echo $this->PHForm->create('Article');
+    echo $this->PHForm->create($objectType);
     echo $this->Form->hidden('Seo.id', array('value' => Hash::get($this->request->data, 'Seo.id')));
     $aTabs = array(
         'General' => $this->element('/AdminContent/admin_edit_'.$objectType),

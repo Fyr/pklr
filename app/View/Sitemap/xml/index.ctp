@@ -10,11 +10,11 @@
     $aUrls = array(
         array('controller' => 'pages', 'action' => 'home'),
         array('controller' => 'pages', 'action' => 'skills'),
-        array('controller' => 'pages', 'action' => 'portfolio'),
-        array('controller' => 'articles', 'action' => 'index'),
+        //array('controller' => 'pages', 'action' => 'portfolio'),
+        //array('controller' => 'articles', 'action' => 'index'),
     );
     foreach($aUrls as $url) {
-        $url = $this->Html->url($url);
+        $url = $this->Html->url($url, true);
         echo $this->element('sitemap_url', compact('url'));
     }
 ?>

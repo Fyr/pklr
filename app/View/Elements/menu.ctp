@@ -2,8 +2,8 @@
     $aMenu = array(
         array('label' => 'обо мне', 'url' => array('controller' => 'pages', 'action' => 'home')),
         array('label' => 'резюме (cv)', 'url' => array('controller' => 'pages', 'action' => 'skills')),
-        array('label' => 'портфолио', 'url' => array('controller' => 'pages', 'action' => 'portfolio')),
-        array('label' => 'блог', 'url' => array('controller' => 'articles', 'action' => 'index'))
+        array('label' => 'портфолио', 'url' => array('controller' => 'articles', 'action' => 'index', 'objectType' => 'Portfolio')),
+        array('label' => 'блог', 'url' => array('controller' => 'articles', 'action' => 'index', 'objectType' => 'SiteArticle'))
     );
 ?>
 <ul id="menu" class="right">

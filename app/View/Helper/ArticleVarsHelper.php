@@ -4,11 +4,15 @@ App::uses('SiteRouter', 'Lib/Routing');
 class ArticleVarsHelper extends AppHelper {
 	public $helpers = array('Media');
 
+	public function getObjectType($article) {
+		return parent::getObjectType($article);
+	}
+
 	public function init($article, &$url, &$title, &$teaser = '', &$src = '', $size = 'noresize', &$featured = false, &$id = '') {
 		$objectType = $this->getObjectType($article);
 		$id = $article[$objectType]['id'];
 		
-		$url = Router::url($article);
+		$url = Router::url(array('controller' => 'articles', 'action' => 'view', $article[$objectType]['slug']));
 		
 		$title = $article[$objectType]['title'];
 		$teaser = nl2br($article[$objectType]['teaser']);

@@ -12,7 +12,7 @@ class AdminContentController extends AdminController {
             	'fields' => array('title', 'slug')
             ),
         	'Portfolio' => array(
-        		'fields' => array('created', 'title', 'url', 'published')
+        		'fields' => array('created', 'title', 'published')
         	),
         	'SiteArticle' => array(
         		'fields' => array('created', 'title', 'slug', 'featured', 'published')
@@ -25,39 +25,17 @@ class AdminContentController extends AdminController {
         $this->set('aRowset', $aRowset);
     }
     
-	public function edit($id = 0, $objectType = '', $objectID = '') {
+	public function edit($id = 0, $objectType, $objectID = '') {
 		$this->loadModel('Media.Media');
 		
 		if (!$id) {
 			// если не задан ID, то objectType+ObjectID должны передаваться
-			$this->request->data('Article.object_type', $objectType);
+			$this->request->data($objectType.'.object_type', $objectType);
 			// $this->request->data('Article.object_id', $objectID);
 			$this->request->data('Seo.object_type', $objectType);
 		}
-		
-		if ($objectType == 'SubcategoryArticle') {
-			$this->request->data('Article.cat_id', $objectID);
-		}
-		
-		// Здесь работаем с моделью Article, т.к. если задавать только $id, 
-		// непонятно какую модель загружать, чтобы определить $objectType
-		/*
-		$this->Article->bindModel(array(
-			'hasOne' => array(
-				'Seo' => array(
-					'className' => 'Seo.Seo',
-					'foreignKey' => 'object_id',
-					'conditions' => array('Seo.object_type' => $objectType),
-					'dependent' => true
-				)
-			)
-		), false);
-		*/
-		
-		$this->PCArticle->edit(&$id, &$lSaved);
-		$objectType = $this->request->data('Article.object_type');
-		// $objectID = $this->request->data('Article.object_id');
-		
+		$this->PCArticle->setModel($objectType)->edit(&$id, &$lSaved);
+
 		if ($lSaved) {
 			$indexRoute = array('action' => 'index', $objectType, $objectID);
 			$editRoute = array('action' => 'edit', $id, $objectType, $objectID);
@@ -65,10 +43,10 @@ class AdminContentController extends AdminController {
 		}
 		
 		if (!$id) {
-			$this->request->data('Article.status', array('published'));
-			$this->request->data('Article.sorting', '0');
+			$this->request->data($objectType.'.status', array('published'));
+			$this->request->data($objectType.'.sorting', '0');
 		}
-		
-		// $this->currMenu = ($objectType == 'Product' || $objectType == 'CategoryProduct') ? 'Catalog' : 'Content';
+
+		$this->set('objectType', $objectType);
 	}
 }

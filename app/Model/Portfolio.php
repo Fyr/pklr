@@ -23,4 +23,23 @@ class Portfolio extends Article {
 		)
 	);
 	*/
+
+	public function beforeSave($options = array()) {
+		if (isset($this->data['Portfolio']['options']['url']) && strpos($this->data['Portfolio']['options']['url'], 'http://') === false) {
+			$this->data['Portfolio']['options']['url'] = 'http://'.$this->data['Portfolio']['options']['url'];
+		}
+		$this->data['Portfolio']['options'] = serialize($this->data['Portfolio']['options']);
+		return true;
+	}
+
+	public function afterFind($results, $primary = false) {
+		if ($primary) {
+			foreach($results as &$res) {
+				if (isset($res['Portfolio']) && isset($res['Portfolio']['options'])) {
+					$res['Portfolio']['options'] = unserialize($res['Portfolio']['options']);
+				}
+			}
+		}
+		return $results;
+	}
 }

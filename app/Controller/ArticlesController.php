@@ -2,18 +2,21 @@
 App::uses('AppController', 'Controller');
 App::uses('AppModel', 'Model');
 App::uses('SiteArticle', 'Model');
-App::uses('News', 'Model');
+App::uses('Portfolio', 'Model');
+App::uses('Media', 'Media.Model');
+App::uses('Media', 'View/Helper');
 class ArticlesController extends AppController {
 	public $name = 'Articles';
-	public $uses = array('SiteArticle', 'News');
-	public $helpers = array('ObjectType');
+	public $uses = array('Media.Media', 'SiteArticle', 'Portfolio');
+	public $helpers = array('ObjectType', 'Media');
 	
 	const PER_PAGE = 5;
 	
 	protected $objectType;
 
 	public function beforeFilter() {
-		$this->objectType = $this->getObjectType();
+		// $this->objectType = $this->getObjectType();
+		$this->objectType = 'Portfolio';
 		
 		parent::beforeFilter();
 	}
@@ -33,8 +36,6 @@ class ArticlesController extends AppController {
 			'page' => $this->request->param('page')
 		);
 		$this->set('aArticles', $this->paginate($this->objectType));
-		
-		// $this->aBreadCrumbs = array(__('Home page') => '/', )
 	}
 	
 	public function view($slug) {
@@ -43,7 +44,8 @@ class ArticlesController extends AppController {
 		if (!$article && !TEST_ENV) {
 			// return $this->redirect('/');
 		}
-		
-		$this->set('article', $article);
+		$aMedia = $this->Media->getObjectList($this->objectType, $article[$this->objectType]['id']);
+		$this->set(compact('article', 'aMedia'));
+
 	}
 }
