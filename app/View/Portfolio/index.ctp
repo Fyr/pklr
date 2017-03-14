@@ -1,3 +1,4 @@
+<?=$this->element('title', array('title' => 'Портфолио', 'subtitle' => 'Примеры моих проектов'))?>
 <div class="gallery-block">
 <?
     foreach($aArticles as $article) {
