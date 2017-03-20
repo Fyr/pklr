@@ -78,3 +78,11 @@ p, ul.stars {
 .box-content .main-content h3:first-child { margin-top: 0;}
 ul.contacts {display: none;}
 .bottom-block h1, .bottom-block h5 { display: none; opacity: 1; }
+
+.article ul { margin: 0 0 23px 0; }
+.article ul > li {
+    background: url(../img/stars.png) 0 4px no-repeat;
+    font-size: 14px;
+    margin: 0;
+    padding: 1px 0 0 24px;
+}

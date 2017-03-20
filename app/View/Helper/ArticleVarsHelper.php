@@ -2,7 +2,7 @@
 App::uses('AppHelper', 'View/Helper');
 App::uses('SiteRouter', 'Lib/Routing');
 class ArticleVarsHelper extends AppHelper {
-	public $helpers = array('Media');
+	public $helpers = array('Media', 'Html');
 
 	public function getObjectType($article) {
 		return parent::getObjectType($article);
@@ -22,6 +22,6 @@ class ArticleVarsHelper extends AppHelper {
 	}
 
 	public function body($article) {
-		return $article[$this->getObjectType($article)]['body'];
+		return $this->Html->div('article', $article[$this->getObjectType($article)]['body']);
 	}
 }
