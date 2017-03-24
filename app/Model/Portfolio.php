@@ -25,8 +25,11 @@ class Portfolio extends Article {
 	*/
 
 	public function beforeSave($options = array()) {
-		if (isset($this->data['Portfolio']['options']['url']) && strpos($this->data['Portfolio']['options']['url'], 'http://') === false) {
-			$this->data['Portfolio']['options']['url'] = 'http://'.$this->data['Portfolio']['options']['url'];
+		if (isset($this->data['Portfolio']['options']['url'])) {
+			$url = Hash::get($this->data, 'Portfolio.options.url');
+			if ($url && strpos($url, 'http://') === false) {
+				$this->data['Portfolio']['options']['url'] = 'http://'.$url;
+			}
 		}
 		$this->data['Portfolio']['options'] = serialize($this->data['Portfolio']['options']);
 		return true;

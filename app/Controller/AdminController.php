@@ -17,10 +17,13 @@ class AdminController extends AppController {
 				array('label' => __('Portfolio'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Portfolio')),
 				array('label' => __('Articles'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'SiteArticle')),
 			)),
+			'Settings' => array('label' => __('Settings'), 'href' => array('controller' => 'AdminSettings', 'action' => 'index')),
+			/*
 			'Catalog' => array('label' => __('Catalog'), 'href' => '', 'submenu' => array(
 				array('label' => __('Categories'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'CategoryProduct')),
 				array('label' => __('Products'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Product')),
 			)),
+			*/
 			/*[
 			'Products' => array('label' => __('Products'), 'href' => '', 'submenu' => array(
 				'Category' => array('label' => __('Categories'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Category')),
