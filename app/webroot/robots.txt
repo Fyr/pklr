@@ -13,8 +13,8 @@ Disallow: /html/
 Disallow: /lib/
 Disallow: /musei/
 Disallow: /test/
+Disallow: /pages/skills
 Allow: /$
-Allow: /pages/skills
 Allow: /portfolio
 Host: phppainkiller.ru
 Sitemap: http://phppainkiller.ru/sitemap.xml

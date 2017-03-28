@@ -25,11 +25,6 @@ class PagesController extends AppController {
 		$this->set(compact('aSkills', 'aSkillsCat', 'aWorkExp'));
 	}
 
-	public function portfolio() {
-		$aRows = $this->Portfolio->find('all');
-		$this->set('aPortfolio', $aRows);
-	}
-	
 	public function view($slug) {
 		$this->request->params['objectType'] = 'Page';
 		

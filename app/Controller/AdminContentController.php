@@ -12,7 +12,7 @@ class AdminContentController extends AdminController {
             	'fields' => array('title', 'slug')
             ),
         	'Portfolio' => array(
-        		'fields' => array('created', 'title', 'published')
+        		'fields' => array('created', 'title', 'published', 'featured', 'sorting')
         	),
         	'SiteArticle' => array(
         		'fields' => array('created', 'title', 'slug', 'featured', 'published')

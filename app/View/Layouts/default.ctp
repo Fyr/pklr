@@ -50,7 +50,7 @@
 			<div class="energy">
 			</div>
 			<div class="top-block">
-				<a href="index.html" class="logo">
+				<a href="/" class="logo">
 					# PHP PainKiller
 				</a>
 

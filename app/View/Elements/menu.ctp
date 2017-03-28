@@ -9,7 +9,11 @@
 <ul id="menu" class="right">
 <?
     foreach($aMenu as $item) {
-        $options = ($this->request->controller == $item['url']['controller']) ? array('class' => 'selected') :  array();
+        if (isset($isHome) && $isHome) {
+            $options = ($item['url'] == 'javascript::void(0)') ? array('class' => 'selected') : array();
+        } else {
+            $options = ($this->request->controller == $item['url']['controller'] && $item['url']['action'] != 'home') ? array('class' => 'selected') : array();
+        }
         echo $this->Html->tag('li',
             $this->Html->link($item['label'], $item['url'], $options)
         );

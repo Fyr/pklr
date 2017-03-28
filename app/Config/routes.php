@@ -7,6 +7,7 @@ Router::connectNamed(
 );
 */
 Router::connect('/', array('controller' => 'pages', 'action' => 'home'));
+Router::connect('/cv', array('controller' => 'pages', 'action' => 'skills'));
 Router::connect('/pages/view/:slug.html',
 	array(
 		'controller' => 'pages', 

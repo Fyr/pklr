@@ -15,7 +15,7 @@ class PortfolioController extends AppController {
 		$this->paginate = array(
 			'conditions' => array('Portfolio.published' => 1),
 			'limit' => self::PER_PAGE, 
-			'order' => 'Portfolio.created DESC',
+			'order' => array('Portfolio.sorting' => 'asc', 'Portfolio.featured' => 'desc', 'Portfolio.created' =>  'desc'),
 			'page' => $this->request->param('page')
 		);
 		$this->set('aArticles', $this->paginate('Portfolio'));
