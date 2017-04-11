@@ -61,8 +61,8 @@
 				</a>
 
 				<ul class="contacts">
-					<li><a href="#"><span class="icon skype"></span> <span>Sergei Phillipov</span></a></li>
-					<li><a href="#"><span class="icon email"></span> <span>fyr@tut.by</span></a></li>
+					<li><a href="skype:sergei.philippov"><span class="icon skype"></span> <span>sergei.philippov</span></a></li>
+					<li><a href="mailto:fyr.work@gmail.com?subject=Job%20offer"><span class="icon email"></span> <span>fyr.work@gmail.com</span></a></li>
 					<!--li><a href="#"><span class="icon phone"></span> <span>+37529123456</span></a></li-->
 				</ul>
 				<p class="subText">Избавляю от головной боли на веб-проектах</p>

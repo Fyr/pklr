@@ -1,7 +1,7 @@
 <?
     $aMenu = array(
         array('label' => 'обо мне', 'url' => (isset($isHome) && $isHome) ? 'javascript::void(0)' : array('controller' => 'pages', 'action' => 'home')),
-        array('label' => 'резюме (cv)', 'url' => array('controller' => 'pages', 'action' => 'skills')),
+        array('label' => 'для HR (cv)', 'url' => array('controller' => 'pages', 'action' => 'skills')),
         array('label' => 'портфолио', 'url' => array('controller' => 'portfolio', 'action' => 'index')),
         array('label' => 'блог', 'url' => array('controller' => 'articles', 'action' => 'index'))
     );
