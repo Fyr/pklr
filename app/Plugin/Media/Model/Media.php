@@ -85,7 +85,6 @@ class Media extends AppModel {
 		
 		// Create folders if not exists
 		$path = $this->PHMedia->getTypePath($object_type);
-		fdebug(compact('object_type', 'path'));
 		if (!file_exists($path)) {
 		    mkdir($path, self::MKDIR_MODE);
 		}
