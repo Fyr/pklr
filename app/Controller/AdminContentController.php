@@ -14,6 +14,10 @@ class AdminContentController extends AdminController {
         	'Portfolio' => array(
         		'fields' => array('created', 'title', 'published', 'featured', 'sorting')
         	),
+			'WorkExp' => array(
+				'fields' => array('period', 'company', 'position', 'project', 'tech_stack', 'sorting'),
+				'order' => array('WorkExp.sorting' => 'asc')
+			),
         	'SiteArticle' => array(
         		'fields' => array('created', 'title', 'slug', 'featured', 'published')
         	)

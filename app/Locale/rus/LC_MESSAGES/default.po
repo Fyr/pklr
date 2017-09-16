@@ -522,3 +522,12 @@ msgstr "Создать статью в Портфолио"
 
 msgid "Edit Portfolio work"
 msgstr "Редактировать статью в Портфолио"
+
+msgid "Work Experience"
+msgstr "Опыт работы"
+
+msgid "Create Portfolio work"
+msgstr "Создать статью в Портфолио"
+
+msgid "Edit Portfolio work"
+msgstr "Редактировать статью в Портфолио"

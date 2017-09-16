@@ -9,18 +9,21 @@ class ObjectTypeHelper extends AppHelper {
                 'Article' => __('Articles'),
                 'Page' => __('Static pages'),
                 'Portfolio' => __('Portfolio'),
+                'WorkExp' => __('Work Experience'),
                 'User' => __('Users'),
             ),
             'create' => array(
                 'Article' => __('Create Article'),
                 'Page' => __('Create Static page'),
                 'Portfolio' => __('Create Portfolio work'),
+                'WorkExp' => __('Create WorkExp'),
                 'User' => __('Create User'),
             ),
             'edit' => array(
                 'Article' => __('Edit Article'),
                 'Page' => __('Edit Static page'),
                 'Portfolio' => __('Edit Portfolio work'),
+                'WorkExp' => __('Edit WorkExp'),
                 'User' => __('Edit User'),
             ),
             'view' => array(

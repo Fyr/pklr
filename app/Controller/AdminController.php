@@ -15,6 +15,7 @@ class AdminController extends AppController {
 			'Content' => array('label' => __('Content'), 'href' => '', 'submenu' => array(
 				array('label' => __('Static pages'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Page')),
 				array('label' => __('Portfolio'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Portfolio')),
+				array('label' => __('Work Experience'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'WorkExp')),
 				array('label' => __('Articles'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'SiteArticle')),
 			)),
 			'Settings' => array('label' => __('Settings'), 'href' => array('controller' => 'AdminSettings', 'action' => 'index')),

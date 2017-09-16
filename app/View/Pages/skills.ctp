@@ -1,7 +1,7 @@
 <?=$this->element('title', array(
     'title' => 'Резюме (CV)',
     'subtitle' => 'Мое резюме для HR и потенциальных работодателей',
-    'right' => 'Обновлено: <span style="color: #79c113; font-weight: bold;">11.10.2016</span>'
+    'right' => 'Обновлено: <span style="color: #79c113; font-weight: bold;">15.09.2017</span>'
 ))?>
 <!--p class="sub" style="text-align: right; "> </p-->
 <p>
